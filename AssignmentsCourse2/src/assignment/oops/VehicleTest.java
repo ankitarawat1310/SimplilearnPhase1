@@ -1,5 +1,11 @@
 package assignment.oops;
+/**implementing all the concept of oops inheritance,abstraction, runtime polymorphism**/
 
+/**parent :vehicle
+ * 
+ * @author ankitarawat
+ *
+ */
  abstract class Vehicle{
 	int speed= 100;
 	long distance= 2000L;
@@ -27,7 +33,7 @@ package assignment.oops;
 		System.out.println("Distance is: "+this.distance);
 	}
 	 Vehicle(){
-		System.out.println("I am in the parent constructor");
+		System.out.println("I am in the parent class");
 	}
 	
 	 Vehicle(int speed, long distance) {
@@ -38,6 +44,11 @@ package assignment.oops;
 	
 }
 
+ /**
+  * Child class:2W,3W,4W,8W
+  * @author ankitarawat
+  *
+  */
 class TwoWheeler extends Vehicle{
 		int nos_of_tyres=2;
 		int speed= 200;
@@ -60,10 +71,9 @@ class TwoWheeler extends Vehicle{
 		
 		 public void display() {
 			System.out.println("*****Displaying the TwoWheeler variables****");
-			System.out.println("Speed is: "+this.speed);
-			System.out.println("Distance is: "+this.distance);
-			System.out.println("Number of tyres are: "+this.nos_of_tyres);
-			super.display();
+			System.out.println("Speed is: "+this.speed+" Distance is: "+this.distance+" and tyres are: "+this.nos_of_tyres);
+			System.out.println("****Displaying the parent variables****");
+			System.out.println("Speed is: "+super.speed+" and Distance is: "+super.distance);
 			System.out.println("---------------------------------------");
 		}
 	}
@@ -90,11 +100,11 @@ class ThreeWheeler extends Vehicle{
 	
 	public void display() {
 		System.out.println("*****Displaying the ThreeWheeler variables****");
-		System.out.println("Speed is: "+this.speed);
-		System.out.println("Distance is: "+this.distance);
-		System.out.println("Number of tyres are: "+this.nos_of_tyres);
-		super.display();
+		System.out.println("Speed is: "+this.speed+" Distance is: "+this.distance+" and tyres are: "+this.nos_of_tyres);
+		System.out.println("****Displaying the parent  variables****");
+		System.out.println("Speed is: "+super.speed+" and Distance is: "+super.distance);
 		System.out.println("---------------------------------------");
+			
 	}
 }
 
@@ -121,10 +131,9 @@ class FourWheeler extends Vehicle{
 	
 	public void display() {
 		System.out.println("*****Displaying the FourWheeler variables****");
-		System.out.println("Speed is: "+this.speed);
-		System.out.println("Distance is: "+this.distance);
-		System.out.println("Number of tyres are: "+this.nos_of_tyres);
-		super.display();
+		System.out.println("Speed is: "+this.speed+" Distance is: "+this.distance+" and tyres are: "+this.nos_of_tyres);
+		System.out.println("****Displaying the parent  variables****");
+		System.out.println("Speed is: "+super.speed+" and Distance is: "+super.distance);
 		System.out.println("---------------------------------------");
 	}
 }
@@ -151,10 +160,9 @@ class EightWheeler extends Vehicle{
 	
 	public void display() {
 		System.out.println("*****Displaying the EightWheeler variables****");
-		System.out.println("Speed is: "+this.speed);
-		System.out.println("Distance is: "+this.distance);
-		System.out.println("Number of tyres are: "+this.nos_of_tyres);
-		super.display();
+		System.out.println("Speed is: "+this.speed+" Distance is: "+this.distance+" and tyres are: "+this.nos_of_tyres);
+		System.out.println("****Displaying the parent  variables****");
+		System.out.println("Speed is: "+super.speed+" and Distance is: "+super.distance);
 		System.out.println("---------------------------------------");
 	}
 }
